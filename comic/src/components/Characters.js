@@ -1,8 +1,8 @@
-import React , { Componenet } from 'react';
+import React , { Component } from 'react';
 import CharContainer from './CharContainer';
 
-class Characters extends Componenet {
-    constructor(){
+class Characters extends Component {
+    constructor() {
         super();
         this.state = {
             marvelCharacters :[]
