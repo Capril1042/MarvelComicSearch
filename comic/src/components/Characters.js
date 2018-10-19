@@ -1,5 +1,6 @@
 import React , { Component } from 'react';
 import CharContainer from './CharContainer';
+require('dotenv').config();
 
 class Characters extends Component {
     constructor() {
@@ -10,7 +11,11 @@ class Characters extends Component {
     }
 
     componenetDidMount() {
-        fetch('https://gateway.marvel.com/v1/public/characters')
+        const key = process.env.REACT_APP_API_KEY
+
+        fetch(`https://gateway.marvel.com:443/v1/public/characters?apikey=${key}`, {
+            offset:0, 
+            limit:100})
             .then(res => {
                 return res.json();
             })
@@ -22,6 +27,7 @@ class Characters extends Component {
             });
     }
     render() {
+        console.log(this.state)
         return (
             <div className="Characters">
             {this.state.marvelCharacters.map((charData,i)=> <CharContainer key={i} data={charData}/>)}
