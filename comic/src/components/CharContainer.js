@@ -1,10 +1,11 @@
 import React from 'react';
 
 const CharContainer = ({ data }) => {
-    console.log(data)
+    let pic = `${data.thumbnail.path}.${data.thumbnail.extension}`
     return(
-        <div>
-        <h4>{data.name} </h4>
+        <div classname="CharContainer">
+            <h4 classname="CharName">{data.name} </h4>
+            <img classname="CharPic" src={pic} />
         </div>
     );
 }

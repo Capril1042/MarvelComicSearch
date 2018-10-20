@@ -13,7 +13,7 @@ class Characters extends Component {
     componentDidMount() {
         const key = process.env.REACT_APP_API_KEY
         
-        fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&limit=25&offset=0&apikey=${key}`)
+        fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&apikey=${key}`)
             .then(res => {
                 return res.json();
             })
