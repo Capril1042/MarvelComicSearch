@@ -10,24 +10,23 @@ class Characters extends Component {
         };
     }
 
-    componenetDidMount() {
+    componentDidMount() {
         const key = process.env.REACT_APP_API_KEY
-
-        fetch(`https://gateway.marvel.com:443/v1/public/characters?apikey=${key}`, {
-            offset:0, 
-            limit:100})
+        
+        fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&limit=25&offset=0&apikey=${key}`)
             .then(res => {
                 return res.json();
             })
             .then(data => {
-                this.setState({ marvelCharacters: data.results });
+                console.log(data)
+                this.setState({ marvelCharacters: data.data.results });
             })
             .catch(err => {
                 throw new Error(err);
             });
     }
     render() {
-        console.log(this.state)
+        console.log(this.state.marvelCharacters)
         return (
             <div className="Characters">
             {this.state.marvelCharacters.map((charData,i)=> <CharContainer key={i} data={charData}/>)}

@@ -4,7 +4,7 @@ const CharContainer = ({ data }) => {
     console.log(data)
     return(
         <div>
-        <h4>{data.data.name} </h4>
+        <h4>{data.name} </h4>
         </div>
     );
 }
