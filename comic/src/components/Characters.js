@@ -13,7 +13,7 @@ class Characters extends Component {
     componentDidMount() {
         const key = process.env.REACT_APP_API_KEY
         
-        fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&apikey=${key}`)
+        fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&offset=0&limit=100&apikey=${key}`)
             .then(res => {
                 return res.json();
             })
@@ -29,6 +29,9 @@ class Characters extends Component {
         console.log(this.state.marvelCharacters)
         return (
             <div className="Characters">
+            <div className="Search">
+            search bar here-> button forward and back
+            </div>
             {this.state.marvelCharacters.map((charData,i)=> <CharContainer key={i} data={charData}/>)}
             </div>
         );

@@ -5,7 +5,7 @@ const CharContainer = ({ data }) => {
     return(
         <div className="CharContainer">
             <h4 className="CharName">{data.name} </h4>
-            <img className="CharPic" src={pic} />
+            <img className="CharPic" src={pic} alt="marvelcharacter"/>
         </div>
     );
 }

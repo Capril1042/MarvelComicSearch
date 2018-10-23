@@ -19,18 +19,37 @@ code {
 }
 .CharSelector {
   width:25%;
+  background:red;
 }
+
+.CharSelector p {
+  font-size:1em;
+  text-align:left;
+  padding:4%;
+}
+
 .Characters {
-  width:75%;
+  width:80%;
   display:flex;
   flex-wrap: wrap;
+  background:black;
+  padding:5%;
 }
 /* CharacterContainers */
-.CharContainer{
-  height:25vh;
-  width:25vw;
+.CharContainer {
+  height:15vh;
+  width:15vw;
+  margin:1%;
+  border: 1px solid white
+}
+.CharName {
+  height:5%;
+  margin-top: 0;
+  color: white;
+  font-size:.5rem;
 }
 .CharPic {
-height:20vh;
-width:20vw;
+  margin-top:12%;
+  height:50%;
+  width:100%;
 }
