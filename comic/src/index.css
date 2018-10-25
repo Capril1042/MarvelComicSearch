@@ -27,7 +27,13 @@ code {
   text-align:left;
   padding:4%;
 }
-
+.Header {
+  width:100vw;
+  background: darkgrey;
+  color:white;
+  height:10vh;
+  position: fixed;
+}
 .Characters {
   width:80%;
   display:flex;
