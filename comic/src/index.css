@@ -33,7 +33,20 @@ code {
   color:white;
   height:10vh;
   position: fixed;
+  display:flex;
   font-family: 'Black Han Sans', sans-serif;
+}
+.Title {
+  width:95%;
+  text-align:right;
+  line-height:10vh;
+  font-size:1.5em;
+}
+.Info {
+  width:15%;
+  text-align:right;
+  line-height:10vh;
+  padding-right:3%;
 }
 .Characters {
   width:80%;
