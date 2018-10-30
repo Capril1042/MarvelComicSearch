@@ -13,9 +13,10 @@ code {
     monospace;
 }
 
-
 .Main-Body {
   display:flex;
+  width:100%;
+  padding-top:15%;
 }
 .CharSelector {
   width:25%;
@@ -27,8 +28,9 @@ code {
   text-align:left;
   padding:4%;
 }
+
 .Header {
-  width:100vw;
+  width:100%;
   background: darkgrey;
   color:white;
   height:10vh;
@@ -72,4 +74,13 @@ code {
   margin-top:12%;
   height:50%;
   width:100%;
+}
+
+.Search {
+  width:98%;
+  height:5vh;
+  background:yellow;
+  border-radius:5px;
+  justify-content:center;
+  margin-bottom:2%;
 }
