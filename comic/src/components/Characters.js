@@ -6,14 +6,28 @@ class Characters extends Component {
     constructor() {
         super();
         this.state = {
-            marvelCharacters :[]
+            marvelCharacters :[],
+            limit: 100,
+            offset: 0,
         };
+    }
+
+    buttonClickRight=(e)=>{
+        let newOffset = this.state.offset + 99;
+        e.preventDefault();
+        this.setState({offset: newOffset})
+    }
+
+    buttonClickLeft=(e)=> {
+        let newOffset = this.state.offset-99;
+        e.preventDefault();
+        this.setState({offset: newOffset})
     }
 
     componentDidMount() {
         const key = process.env.REACT_APP_API_KEY
         
-        fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&offset=0&limit=100&apikey=${key}`)
+        fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&offset=${this.state.offset}&limit=${this.state.limit}&apikey=${key}`)
             .then(res => {
                 return res.json();
             })
