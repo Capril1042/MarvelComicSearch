@@ -1,5 +1,7 @@
 import React from 'react';
 
+//ToDo
+// link ... to seperate view of character, a more detailed character page
 const CharContainer = ({ data }) => {
     let pic = `${data.thumbnail.path}.${data.thumbnail.extension}`
     return(

@@ -24,6 +24,12 @@ class Characters extends Component {
         this.setState({offset: newOffset})
     }
 
+    // ToDo Functionality for search
+     handleSearchSubmit = (e) => {
+        
+     }
+
+// update fetch to include search terms
     componentDidMount() {
         const key = process.env.REACT_APP_API_KEY
         

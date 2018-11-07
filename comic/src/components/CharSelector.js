@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+//To Do 
+// functionality for search comic- using marvel api
 const CharSelector = () => {
     
     return(
