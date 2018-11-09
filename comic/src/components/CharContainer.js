@@ -9,8 +9,13 @@ const CharContainer = ({ data }) => {
             <div className="CharHeader"> 
                 <h4 className="CharName">{data.name} </h4>
             </div>
+
             <img className="CharPic" src={pic} alt="marvelcharacter"/>
-            <div className="CharFooter"> ... </div>
+
+            <div className="CharFooter"> 
+                <div className="AddChar">Add</div>
+                <div className="MoreInfo">... </div>
+            </div>
         </div>
     );
 }

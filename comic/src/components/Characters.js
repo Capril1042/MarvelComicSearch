@@ -53,9 +53,12 @@ class Characters extends Component {
                     search bar here
             </div>
             {this.state.marvelCharacters.map((charData,i)=> <CharContainer key={i} data={charData}/>)}
-            
             <div className="Search">
                 search buttons
+                <div className="PageButtons">
+            <div className="RightButton"> .</div>
+            <div className="LeftButton"> . </div>
+            </div>
             </div>
         </div>
         );
