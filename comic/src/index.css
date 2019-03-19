@@ -13,50 +13,15 @@ code {
     monospace;
 }
 
-.Main-Body {
-  display:flex;
-  width:100%;
-  padding-top:15%;
-}
-.CharSelector {
-  width:25%;
-  background:red;
-}
-
 .CharSelector p {
   font-size:1em;
   text-align:left;
   padding:4%;
 }
 
-.Header {
-  width:100%;
-  background: darkgrey;
-  color:white;
-  height:10vh;
-  position: fixed;
-  display:flex;
-  font-family: 'Black Han Sans', sans-serif;
-}
-.Title {
-  width:95%;
-  text-align:right;
-  line-height:10vh;
-  font-size:1.5em;
-}
-.Info {
-  width:15%;
-  text-align:right;
-  line-height:10vh;
-  padding-right:3%;
-}
-.Characters {
-  width:80%;
-  display:flex;
-  flex-wrap: wrap;
-  background:black;
-  padding:5%;
-}
+
+
+
 /* CharacterContainers */
 .CharContainer {
   height:15vh;

@@ -1,0 +1,25 @@
+.Header {
+  color:white;
+  font-family: 'Black Han Sans', sans-serif;
+   display:flex;
+}
+
+
+.Title {
+  width:80%;
+  text-align:center;
+  line-height:11vh;
+  font-size:6vw;
+}
+
+.Info {
+  width:20%;
+  text-align:center;
+  line-height:11vh;
+  padding-right:3%;
+  font-size: 6vw;
+}
+
+
+
+
