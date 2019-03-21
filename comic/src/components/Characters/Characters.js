@@ -1,5 +1,7 @@
 import React , { Component } from 'react';
 import CharContainer from './CharContainer';
+
+import './Characters.css';
 require('dotenv').config();
 
 class Characters extends Component {
@@ -48,17 +50,10 @@ class Characters extends Component {
     render() {
         console.log(this.state.marvelCharacters)
         return (
-            <div className="Characters">
-                <div className="Search">
-                    search bar here
-            </div>
+            <div className="CharactersDisplay">
+    <div className="CharCon">
             {this.state.marvelCharacters.map((charData,i)=> <CharContainer key={i} data={charData}/>)}
-            <div className="Search">
-                search buttons
-                <div className="PageButtons">
-            <div className="RightButton"> .</div>
-            <div className="LeftButton"> . </div>
-            </div>
+            
             </div>
         </div>
         );

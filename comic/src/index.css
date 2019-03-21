@@ -20,35 +20,6 @@ code {
 }
 
 
-
-
-/* CharacterContainers */
-.CharContainer {
-  height:15vh;
-  width:15vw;
-  margin:1%;
-  border: 1px solid white
-}
-.CharName {
-  height:5%;
-  margin-top: 0;
-  color: white;
-  font-size:.5rem;
-}
-.CharPic {
-  margin-top:12%;
-  height:50%;
-  width:100%;
-}
-
-.Search {
-  width:98%;
-  height:5vh;
-  background:yellow;
-  border-radius:5px;
-  justify-content:center;
-  margin-bottom:2%;
-}
 .CharSelectorBox {
   height:10vh;
   width: 90%;

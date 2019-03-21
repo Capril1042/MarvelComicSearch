@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './CharContainer.css';
+
 //ToDo
 // link ... to seperate view of character, a more detailed character page
 const CharContainer = ({ data }) => {

@@ -8,16 +8,15 @@
 .Title {
   width:80%;
   text-align:center;
-  line-height:11vh;
-  font-size:6vw;
+  line-height:9vh;
+  padding-top:1%;
+  font-size:4vw;
 }
 
 .Info {
   width:20%;
   text-align:center;
-  line-height:11vh;
   padding-right:3%;
-  font-size: 6vw;
 }
 
 

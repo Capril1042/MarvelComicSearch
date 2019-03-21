@@ -1,0 +1,9 @@
+.CharactersDisplay {
+    width:80%;
+    margin-left:10%; 
+}
+
+.CharCon {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}

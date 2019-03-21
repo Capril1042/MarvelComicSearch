@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Characters from './components/Characters/Characters';
 import CharSelector from './components/CharSelector/CharSelector';
 import Header from './components/Header/Header';
+import Search from './components/Search/Search';
 
 import './App.css';
 
@@ -14,11 +15,17 @@ class App extends Component {
           <Header/>
         </header>
           <section className="MainBody">
-            <section className="LeftSide">
+            <section className="LeftSideMain">
               <CharSelector/>
             </section>
+           
               <section className="RightSideMain">
+               <div className="Search">
+            <Search/>
+            </div>
+            <div className="Characters">
                 <Characters/>
+                </div>
               </section>
           </section>
       </div>

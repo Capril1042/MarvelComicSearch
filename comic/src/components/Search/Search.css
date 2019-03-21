@@ -1,0 +1,9 @@
+
+.SearchContainer {
+  width:95%;
+  height:5vh;
+  background:yellow;
+  border-radius:5px;
+  justify-content:center;
+  margin-top:2%;
+}
