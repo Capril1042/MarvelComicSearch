@@ -7,3 +7,17 @@
   justify-content:center;
   margin-top:2%;
 }
+
+.Filter {
+  width:99%;
+  font-size: 20px;
+  box-shadow: none;
+  height:4vh;
+  background:#ffff4d;
+  border-radius:5px;
+  border: 1px solid yellow;
+  outline:none;
+}
+
+.Filter::placeholder {
+    color: #b5b5b5; }

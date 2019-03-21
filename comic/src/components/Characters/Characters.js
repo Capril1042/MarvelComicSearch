@@ -32,7 +32,7 @@ class Characters extends Component {
      }
 
 // update fetch to include search terms
-    componentDidMount() {
+    componentWillMount() {
         const key = process.env.REACT_APP_API_KEY
         
         fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&offset=${this.state.offset}&limit=${this.state.limit}&apikey=${key}`)
@@ -53,8 +53,10 @@ class Characters extends Component {
             <div className="CharactersDisplay">
     <div className="CharCon">
             {this.state.marvelCharacters.map((charData,i)=> <CharContainer key={i} data={charData}/>)}
-            
+
             </div>
+            <button>Left</button>
+            <button OnClick={this.buttonClickRight}>Right</button>
         </div>
         );
     }
