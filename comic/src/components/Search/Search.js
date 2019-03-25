@@ -1,12 +1,11 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 
 import './Search.css';
 
-class Search extends Component {
-    constructor() {
-        super();
-    }
+
+export default class Search extends PureComponent {
+   
 
 handleInput=(event)=> {
     this.props.onInput(event.target.value);
@@ -32,4 +31,3 @@ Search.defaultProps = {
   onInput: () => {},
 };
 
-export default Search;

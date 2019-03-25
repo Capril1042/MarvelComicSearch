@@ -20,12 +20,10 @@ class App extends Component {
             </section>
            
               <section className="RightSideMain">
-               <div className="Search">
+               <section className="Search">
             <Search/>
-            </div>
-            <div className="Characters">
+            </section>
                 <Characters/>
-                </div>
               </section>
           </section>
       </div>

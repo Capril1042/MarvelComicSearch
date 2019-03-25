@@ -16,8 +16,7 @@ class Characters extends Component {
 
     buttonClickRight=(e)=>{
         let newOffset = this.state.offset + 99;
-        e.preventDefault();
-        this.setState({offset: newOffset})
+        this.setState({offset: newOffset});
     }
 
     buttonClickLeft=(e)=> {
@@ -31,9 +30,10 @@ class Characters extends Component {
         
      }
 
+
 // update fetch to include search terms
-    componentWillMount() {
-        const key = process.env.REACT_APP_API_KEY
+    componentDidUpdate() {
+          const key = process.env.REACT_APP_API_KEY
         
         fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&offset=${this.state.offset}&limit=${this.state.limit}&apikey=${key}`)
             .then(res => {
@@ -47,16 +47,17 @@ class Characters extends Component {
                 throw new Error(err);
             });
     }
+
     render() {
-        console.log(this.state.marvelCharacters)
+        console.log(this.state.offset);
+    
         return (
             <div className="CharactersDisplay">
     <div className="CharCon">
             {this.state.marvelCharacters.map((charData,i)=> <CharContainer key={i} data={charData}/>)}
-
-            </div>
-            <button>Left</button>
-            <button OnClick={this.buttonClickRight}>Right</button>
+            <button onClick={this.buttonClickLeft}> L</button>
+            
+            <button onClick={this.buttonClickRight}> R</button></div>
         </div>
         );
     }
