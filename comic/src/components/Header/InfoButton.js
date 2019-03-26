@@ -24,7 +24,7 @@ render() {
     console.log(this.state)
 return (
     <div>
-    <button onClick={this.openModal} ><i class="fas fa-bars"></i>
+    <button onClick={this.openModal} ><i className="fas fa-bars"></i>
     </button>
     <Modal isOpen={this.state.modalOpen} onClose={this.closeModal}>
     <h2> About </h2>

@@ -6,6 +6,7 @@ import './Search.css';
 
 export default class Search extends PureComponent {
    
+   
 
 handleInput=(event)=> {
     this.props.onInput(event.target.value);

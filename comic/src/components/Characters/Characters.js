@@ -32,7 +32,7 @@ class Characters extends Component {
 
 
 // update fetch to include search terms
-    componentDidUpdate() {
+    componentWillUpdate() {
           const key = process.env.REACT_APP_API_KEY
         
         fetch(`https://gateway.marvel.com/v1/public/characters?orderBy=name&offset=${this.state.offset}&limit=${this.state.limit}&apikey=${key}`)
@@ -50,7 +50,7 @@ class Characters extends Component {
 
     render() {
         console.log(this.state.offset);
-    
+        
         return (
             <div className="CharactersDisplay">
     <div className="CharCon">

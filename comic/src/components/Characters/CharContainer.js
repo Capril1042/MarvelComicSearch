@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 import './CharContainer.css';
 
@@ -16,7 +17,7 @@ const CharContainer = ({ data }) => {
 
             <div className="CharFooter"> 
                 <div className="AddChar">Add</div>
-                <div className="MoreInfo">... </div>
+                <div className="MoreInfo"><Link to="/CharaterInfo">...</Link> </div>
             </div>
         </div>
     );
